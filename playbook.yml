@@ -7,3 +7,6 @@
        service:
           name: httpd
           state: restarted
+
+     - name: create a directory
+       file: path=/tmp/kacst123 state=directory
