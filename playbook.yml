@@ -1,0 +1,9 @@
+- name: starta  service
+  hosts: all
+  user: admin
+  become: true
+  tasks:
+     - name: start apache
+       service:
+          name: httpd
+          state: restarted
